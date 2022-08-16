@@ -1,5 +1,5 @@
 {
-    "name": "shiri/inspire",
+    "name": "yusef22/inspire",
     "autoload": {
         "psr-4": {
             "Yusef22\\Inspire\\": "src/"
@@ -7,7 +7,7 @@
     },
     "authors": [
         {
-            "name": "yusef22",
+            "name": "Yusef Shiri",
             "email": "yusef22@gmail.com"
         }
     ],
