@@ -1,0 +1,17 @@
+{
+    "name": "shiri/inspire",
+    "autoload": {
+        "psr-4": {
+            "Yusef22\\Inspire\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yusef22",
+            "email": "yusef22@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    }
+}
