@@ -2,12 +2,14 @@
 
 namespace Yusef22\Inspire;
 
-use Illuminate\Support\Facades\Http;
+use GuzzleHttp\Client;
 
 class Inspire {
     public function justDoIt() {
-        $response = Http::get('https://inspiration.goprogram.ai/');
+        $client = new Client();
+        $response = $client->get('https://inspiration.goprogram.ai/');
+        $data = json_decode($response->getBody()->getContents(), true);
 
-        return $response['quote'] . ' -' . $response['author'];
+        return $data['quote'] . ' -' . $data['author'];
     }
 }
